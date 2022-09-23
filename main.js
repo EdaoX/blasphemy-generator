@@ -9,5 +9,3 @@ console.log(blasphemyGenerator.generate());
 console.log(blasphemyGenerator.generate());
 console.log(blasphemyGenerator.generate());
 console.log(blasphemyGenerator.generate());
-console.log(blasphemyGenerator.generate());
-console.log(blasphemyGenerator.generate());

@@ -6,19 +6,22 @@ const male = [
     `cane di ${w(t.MALE_DIVINITIES)}`,
     `cane di ${w(t.FEMALE_NO_MADONNA_DIVINITIES)}`,
     'cane della Madonna', 
-    'fagiano', 'coyote', 'panda', 'coccodrillo', 'tirannosaurus rex', 'procione', 'tasso', 'porco', 'maiale', 'martin pescatore', 'capibara'
+    'fagiano', 'coyote', 'panda', 'coccodrillo', 'procione', 'tasso', 'porco', 'maiale', 'martin pescatore', 'capibara',
+    'bue', 'serpente', 'lupo', 'lama', 'coleottero'
 ];
 
 const female = [
-    'papera', 'moffetta', 'cavia', 'giraffa', 'volpe', 'tigre', 'foca', 'porca', 'giumenta', 'maiala', 'cinciallegra'
+    'papera', 'moffetta', 'cavia', 'giraffa', 'volpe', 'tigre', 'foca', 'porca', 'giumenta', 'maiala', 'cinciallegra', 'scimmia',
+    'rana'
 ];
 
 const malePlural = [
-    'fagiani', 'coyote', 'panda', 'coccodrilli', 'tirannosaurus rex', 'procioni', 'tassi', 'porci', 'maiali', 'capibara'
+    'fagiani', 'coyote', 'panda', 'coccodrilli', 'procioni', 'tassi', 'porci', 'maiali', 'capibara',
+    'buoi', 'serpenti', 'lupi', 'lama', 'coleotteri'
 ];
 
 const femalePlural = [
-    'papere', 'oche', 'moffette', 'cavie', 'giraffe', 'volpi', 'tigri', 'foche', 'porche', 'maiale'
+    'papere', 'oche', 'moffette', 'cavie', 'giraffe', 'volpi', 'tigri', 'foche', 'scimmie', 'rane'
 ];
 
 module.exports = { male, female, malePlural, femalePlural };

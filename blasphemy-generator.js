@@ -24,6 +24,11 @@ generator.addSet(tokens.BODY_LOCATIONS, require('./data/body-locations'));
 generator.addSet(tokens.VERBS, require('./data/verbs').any);
 generator.addSet(tokens.VERBS_TARGETTABLE, require('./data/verbs').targettable);
 
+generator.addSet(tokens.MALE_JOBS, require('./data/jobs').male);
+generator.addSet(tokens.FEMALE_JOBS, require('./data/jobs').female);
+
+generator.addSet(tokens.LOCATIONS, require('./data/locations'));
+
 generator.addFormats(require('./data/formats'));
 
 module.exports = generator;

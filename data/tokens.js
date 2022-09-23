@@ -17,10 +17,15 @@ module.exports.FEMALE_ITEMS = 'FI';
 module.exports.MALE_ITEMS_PLURAL = 'MIP';
 module.exports.FEMALE_ITEMS_PLURAL = 'FIP';
 
-module.exports.BODY_LOCATIONS = 'L';
+module.exports.BODY_LOCATIONS = 'BL';
 
 module.exports.VERBS = 'V';
 module.exports.VERBS_TARGETTABLE = 'VT';
+
+module.exports.MALE_JOBS = 'MJ';
+module.exports.FEMALE_JOBS = 'FJ';
+
+module.exports.LOCATIONS = 'L';
 
 module.exports.wrap = StringGenerator.wrapSymbol;
 module.exports.optional = (token, wrap = true) => wrap ? StringGenerator.wrapSymbol(`?${token}`) : `?${token}`;
