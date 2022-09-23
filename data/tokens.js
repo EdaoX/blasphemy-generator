@@ -17,13 +17,11 @@ module.exports.FEMALE_ITEMS = 'FI';
 module.exports.MALE_ITEMS_PLURAL = 'MIP';
 module.exports.FEMALE_ITEMS_PLURAL = 'FIP';
 
-module.exports.LOCATIONS = 'L';
+module.exports.BODY_LOCATIONS = 'L';
 
 module.exports.VERBS = 'V';
 module.exports.VERBS_TARGETTABLE = 'VT';
 
-const wrapped = {};
-
-Object.keys(module.exports).forEach(key => wrapped[key] = StringGenerator.wrapSymbol(module.exports[key]));
-
-module.exports.wrapped = wrapped;
+module.exports.wrap = StringGenerator.wrapSymbol;
+module.exports.optional = (token, wrap = true) => wrap ? StringGenerator.wrapSymbol(`?${token}`) : `?${token}`;
+module.exports.choose = (...tokens) => `${tokens.join('|')}`;

@@ -19,7 +19,7 @@ generator.addSet(tokens.FEMALE_ITEMS, require('./data/items').female);
 generator.addSet(tokens.MALE_ITEMS_PLURAL, require('./data/items').malePlural);
 generator.addSet(tokens.FEMALE_ITEMS_PLURAL, require('./data/items').femalePlural);
 
-generator.addSet(tokens.LOCATIONS, require('./data/body-locations'));
+generator.addSet(tokens.BODY_LOCATIONS, require('./data/body-locations'));
 
 generator.addSet(tokens.VERBS, require('./data/verbs').any);
 generator.addSet(tokens.VERBS_TARGETTABLE, require('./data/verbs').targettable);

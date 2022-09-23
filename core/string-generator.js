@@ -1,4 +1,4 @@
-const {pickRandomArrayElement} = require('./utilities');
+const {pickRandomArrayElement, randomTrue, capitalize, removeDoubleSpaces} = require('./utilities');
 
 module.exports = class StringGenerator
 {
@@ -27,8 +27,7 @@ module.exports = class StringGenerator
 
     addSet(symbol, set)
     {
-        const wrappedSymbol = StringGenerator.wrapSymbol(symbol);
-        this.sets[wrappedSymbol] = set;
+        this.sets[symbol] = set;
     }
 
     getSet(symbol)
@@ -56,12 +55,12 @@ module.exports = class StringGenerator
             generated = this.replaceTokens(generated);
         }
 
-        return generated;
+        return capitalize(removeDoubleSpaces(generated));
     }
 
     replaceTokens(format)
     {
-        return format.replace(/({{\w+}})/g, (match, token) => this.replaceToken(token));
+        return format.replace(/({{\??[\w|]+}})/g, (match, token) => this.replaceToken(token));
     }
 
     pickRandomFormat()
@@ -71,16 +70,28 @@ module.exports = class StringGenerator
 
     replaceToken(token)
     {
+        token = token.replace(/{{|}}/g, '');
+
+        if(token.includes('?')) {
+            if(!randomTrue()) {
+                return '';
+            }
+            token = token.replace('?', '');
+        }
+
+        if(token.includes('|')) {
+            token = pickRandomArrayElement(token.split('|'));
+        }
+
         const set = this.getSet(token);
         if(!set.length)
-            return '';
+            return token;
         
         return pickRandomArrayElement(set);
     }
 
     hasReplaceableTokens(checkedString)
     {
-        const tokens = Object.keys(this.sets);
-        return !!tokens.find(token => checkedString.includes(token))
+        return !!checkedString.match(/({{\??[\w|]+}})/);
     }
 }

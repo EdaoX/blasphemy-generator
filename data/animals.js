@@ -1,11 +1,11 @@
-const t = require('./tokens').wrapped;
+const t = require('./tokens');
+const w = t.wrap;
 
 const male = [
     'cane',
-    `cane di ${t.MALE_DIVINITIES}`,
-    `cane di ${t.FEMALE_NO_MADONNA_DIVINITIES}`,
-    'cane della Madonna',
-    'fagiano', 'coyote', 'panda', 'coccodrillo', 'tirannosaurus rex', 'procione', 'tasso'
+    `cane di ${w(t.MALE_DIVINITIES)}`,
+    `cane di ${w(t.FEMALE_NO_MADONNA_DIVINITIES)}`,
+    'cane della Madonna', 
     'fagiano', 'coyote', 'panda', 'coccodrillo', 'tirannosaurus rex', 'procione', 'tasso', 'porco', 'maiale', 'martin pescatore', 'capibara'
 ];
 
