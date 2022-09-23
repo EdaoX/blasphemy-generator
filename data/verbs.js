@@ -7,7 +7,7 @@ const targettable = [
 
 const any = [
     ...targettable,
-    'rapisce', 'sgrida', 'palpeggia', 'squadra', 'squarta', 'importuna', 'investe', 'scippa', 'sniffa'
+    'rapisce', 'sgrida', 'palpeggia', 'squadra', 'squarta', 'importuna', "investe con l'auto", 'scippa', 'sniffa', 'fa la festa', 'molesta'
 ];
 
 
