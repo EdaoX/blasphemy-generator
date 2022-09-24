@@ -55,7 +55,7 @@ module.exports = class StringGenerator
             generated = this.replaceTokens(generated);
         }
 
-        return capitalize(removeDoubleSpaces(generated));
+        return capitalize(removeDoubleSpaces(generated.trim()));
     }
 
     replaceTokens(format)
