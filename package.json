@@ -5,9 +5,12 @@
   "author": "Matteo Giusti <suikofire@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "build-web" : "webpack --mode production -w"
   }
 }

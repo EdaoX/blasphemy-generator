@@ -11,7 +11,7 @@ const male = [
 ];
 
 const female = [
-    'papera', 'moffetta', 'cavia', 'giraffa', 'volpe', 'tigre', 'foca', 'porca', 'giumenta', 'maiala', 'cinciallegra', 'scimmia',
+    'papera', 'moffetta', 'cavia', 'giraffa', 'volpe', 'tigre', 'foca', 'giumenta', 'cinciallegra', 'scimmia',
     'rana'
 ];
 

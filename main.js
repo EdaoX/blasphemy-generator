@@ -1,4 +1,4 @@
-const blasphemyGenerator = require('./blasphemy-generator');
+const blasphemyGenerator = require('./src/blasphemy-generator');
 
 const express = require('express');
 const app = express();
