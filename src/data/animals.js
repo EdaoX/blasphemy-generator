@@ -7,7 +7,7 @@ const male = [
     `cane di ${w(t.FEMALE_NO_MADONNA_DIVINITIES)}`,
     'cane della Madonna', 
     'fagiano', 'coyote', 'panda', 'coccodrillo', 'procione', 'tasso', 'porco', 'maiale', 'martin pescatore', 'capibara',
-    'bue', 'serpente', 'lupo', 'lama', 'coleottero'
+    'bue', 'serpente', 'lupo', 'lama', 'coleottero', 'mandingo','pinguino'
 ];
 
 const female = [
