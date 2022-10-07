@@ -3,7 +3,7 @@ const male = [
     'dispettoso', 'combinaguai', 'insolvente', 'schizofrenico', 'cotto a vapore', 'spiritoso', 'bestia', 'di seconda mano',
     'iracondo', 'sospettoso', 'misantropo', 'scorretto', 'squallido', 'rompicoglioni', 'urlatore', 'da due soldi', 'nero', 
     'dal carattere di merda', 'merda', 'merdoso','grottesco','infingardo','giocondo','traballante','rottinculo','blasfemo',
-    'pazzo', 'diversamente abile', 'imbecille', 'ignorante', 'stronzo', 'imbarazzante', 'discutibile'
+    'pazzo', 'diversamente abile', 'imbecille', 'ignorante', 'stronzo', 'imbarazzante', 'discutibile', 'invertebrato'
 ];
 
 const female = [
@@ -11,7 +11,7 @@ const female = [
     'dispettosa', 'combinaguai', 'insolvente', 'schizofrenica', 'cotta a vapore', 'spiritosa', 'bestia', 'di seconda mano',
     'iraconda', 'sospettosa', 'misantropa', 'scorretta', 'squallida', 'rompicoglioni', 'urlatrice', 'da due soldi', 'nera', 
     'dal carattere di merda', 'merda', 'merdosa','grottesca','infingarda','gioconda','traballante','rottinculo','blasfema',
-    'pazza', 'diversamente abile', 'imbecille', 'ignorante', 'stronza', 'imbarazzante', 'discutibile'
+    'pazza', 'diversamente abile', 'imbecille', 'ignorante', 'stronza', 'imbarazzante', 'discutibile', 'invertebrata'
 ];
 
 module.exports = { male, female };
