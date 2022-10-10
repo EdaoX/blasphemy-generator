@@ -28,5 +28,5 @@ module.exports.FEMALE_JOBS = 'FJ';
 module.exports.LOCATIONS = 'L';
 
 module.exports.wrap = StringGenerator.wrapSymbol;
-module.exports.optional = (token, wrap = true) => wrap ? StringGenerator.wrapSymbol(`?${token}`) : `?${token}`;
+module.exports.optional = token => `?${token}`;
 module.exports.choose = (...tokens) => `${tokens.join('|')}`;
