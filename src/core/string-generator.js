@@ -1,5 +1,7 @@
 const {pickRandomArrayElement, randomTrue, capitalize, removeDoubleSpaces} = require('./utilities');
 
+const TOKEN_REGEX = /({{\??[\w|\sàèéìòù]+}})/g;
+
 module.exports = class StringGenerator
 {
     maxIterations = 10;
@@ -60,7 +62,7 @@ module.exports = class StringGenerator
 
     replaceTokens(format)
     {
-        return format.replace(/({{\??[\w|]+}})/g, (match, token) => this.replaceToken(token));
+        return format.replace(TOKEN_REGEX, (match, token) => this.replaceToken(token));
     }
 
     pickRandomFormat()
@@ -92,6 +94,6 @@ module.exports = class StringGenerator
 
     hasReplaceableTokens(checkedString)
     {
-        return !!checkedString.match(/({{\??[\w|]+}})/);
+        return !!checkedString.match(TOKEN_REGEX);
     }
 }
