@@ -1,6 +1,6 @@
 const {pickRandomArrayElement, randomTrue, capitalize, removeDoubleSpaces} = require('./utilities');
 
-const TOKEN_REGEX = /({{\??[\w|\sàèéìòù]+}})/g;
+const TOKEN_REGEX = /({{\??[\w|\sàèéìòù']+}})/g;
 
 module.exports = class StringGenerator
 {
