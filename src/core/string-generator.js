@@ -4,7 +4,7 @@ const TOKEN_REGEX = /({{\??[\w|\sàèéìòù',]+}})/g;
 
 module.exports = class StringGenerator
 {
-    maxIterations = 10;
+    maxIterations = 20;
 
     constructor()
     {
