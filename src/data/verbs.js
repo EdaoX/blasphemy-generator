@@ -23,13 +23,18 @@ const maleTargetAnimal = `ai ${w(t.MALE_ANIMALS_PLURAL)}`;
 const femaleTargetAnimal = `alle ${w(t.FEMALE_ANIMALS_PLURAL)}`;
 const targetAnimal = cw(maleTargetAnimal, femaleTargetAnimal);
 
+const maleTool = `il ${w(t.MALE_ITEMS)}`;
+const femaleTool = `la ${w(t.FEMALE_ITEMS)}`;
+const tool = cw(maleTool, femaleTool);
+
 const special = [
     `ruba ${subject} ${o(targetAnimal)}`,
     `indica ${subject} ${o(targetAnimal)}`,
     `lancia ${subject} ${o(target)}`,
     `vende ${subject} ${o(targetAnimal)}`,
     `paga ${subject} ${o(targetAnimal)}`,
-    `mette ${subject} ${w(t.BODY_LOCATIONS)} ${cw('alla Madonna', `a ${w(t.MALE_DIVINITIES)}`, `a ${w(t.FEMALE_DIVINITIES)}`)}`
+    `mette ${subject} ${w(t.BODY_LOCATIONS)} ${cw('alla Madonna', `a ${w(t.MALE_DIVINITIES)}`, `a ${w(t.FEMALE_DIVINITIES)}`)}`,
+    `picchia ${subject} con ${tool}`
 ];
 
 const animalOnly = [
@@ -38,7 +43,7 @@ const animalOnly = [
 
 const generic = [
     'sgrida', 'squadra', 'importuna', "investe con l'auto", 'sniffa', 'brucia', 'lecca', 'annusa', 
-    'cuoce', 'sbrana', 'spezza', 'spinge', 'picchia', 'solletica', 'sotterra', 'impala', 'insulta', 'denigra', 'devasta',
+    'cuoce', 'sbrana', 'spezza', 'spinge', 'solletica', 'sotterra', 'impala', 'insulta', 'denigra', 'devasta',
     'spreme', 'diffama', 'prende a sprangate', 'piscia sopra', 'lincia', 'addita', 'mastica', 'teme'
 ];
 
