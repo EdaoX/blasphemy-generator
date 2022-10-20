@@ -185,7 +185,7 @@ module.exports = class StringGenerator
             ]
         }
     
-        indexes.sort();
+        indexes.sort((a, b) => a - b);
     
         const parts = [];
         
