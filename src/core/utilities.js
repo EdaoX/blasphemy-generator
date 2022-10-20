@@ -1,4 +1,4 @@
-module.exports.pickRandomFromArray = arr => {
+module.exports.pickRandomArrayElement = arr => {
     if(!arr || !arr.length)
         return null;
     
