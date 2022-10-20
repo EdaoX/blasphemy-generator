@@ -4,7 +4,7 @@ const male = [
     'iracondo', 'sospettoso', 'misantropo', 'scorretto', 'squallido', 'rompicoglioni', 'urlatore', 'da due soldi', 'nero', 
     'dal carattere di merda', 'merda', 'merdoso','grottesco','infingardo','giocondo','traballante','rottinculo','blasfemo',
     'pazzo', 'diversamente abile', 'imbecille', 'ignorante', 'stronzo', 'imbarazzante', 'discutibile', 'invertebrato', 'razzista',
-    'negro', 'ebreo', 'sodomita', 'malato', 'strabico', 'senzatetto'
+    'negro', 'ebreo', 'sodomita', 'malato', 'strabico', 'senzatetto', 'sputatore'
 ];
 
 const female = [
@@ -13,7 +13,7 @@ const female = [
     'iraconda', 'sospettosa', 'misantropa', 'scorretta', 'squallida', 'rompicoglioni', 'urlatrice', 'da due soldi', 'nera', 
     'dal carattere di merda', 'merda', 'merdosa','grottesca','infingarda','gioconda','traballante','rottinculo','blasfema',
     'pazza', 'diversamente abile', 'imbecille', 'ignorante', 'stronza', 'imbarazzante', 'discutibile', 'invertebrata', 'razzista',
-    'negra', 'ebrea', 'sodomita', 'malata', 'strabica', 'senzatetto'
+    'negra', 'ebrea', 'sodomita', 'malata', 'strabica', 'senzatetto', 'sputatrice'
 ];
 
 module.exports = { male, female };
